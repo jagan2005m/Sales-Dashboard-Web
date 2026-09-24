@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sales Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Sales Dashboard</h1>
+
+        <!-- KPI Cards -->
+        <div class="kpi-container">
+
+    <div class="kpi-card">
+        <h3>Total Sales</h3>
+        <p id="totalSales">₹0</p>
+    </div>
+
+    <div class="kpi-card">
+        <h3>Total Profit</h3>
+        <p id="totalProfit">₹0</p>
+    </div>
+
+    <div class="kpi-card">
+        <h3>Total Orders</h3>
+        <p id="totalOrders">100</p>
+    </div>
+
+    <div class="kpi-card">
+        <h3>Average Order Value</h3>
+        <p id="averageOrderValue">₹0</p>
+    </div>
+
+</div>
+
+        <div class="filters">
+
+    <select id="categoryFilter">
+        <option value="All">All Categories</option>
+    </select>
+
+    <select id="branchFilter">
+        <option value="All">All Branches</option>
+    </select>
+
+</div>
+        <!-- Charts -->
+        <div class="charts">
+
+    <div class="chart-box">
+       <h2>Monthly Sales Trend</h2>
+<canvas id="salesChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>Sales by Category</h2>
+        <canvas id="categoryChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>Sales by Branch</h2>
+        <canvas id="branchChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>Payment Method Distribution</h2>
+<canvas id="paymentChart"></canvas>
+    </div>
+
+</div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
